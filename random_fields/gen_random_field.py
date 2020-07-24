@@ -31,6 +31,7 @@ class random_field(object):
         :param std: standard deviation of the Gaussian distribution (sigma)
         :param minval: min value to truncate the Gaussian distribution (opt.)
         :param maxval: max value to truncate the Gaussian distribution (opt.)
+        :return: array with Gaussian random field
         """
         # check inputs
         if minval is None and maxval is not None:
@@ -70,6 +71,7 @@ class random_field(object):
 
         :param n_realizations: number of realizations to be generated
         :kwargs: key arguments to pass to random_field.gaussian
+        :return: list of arrays with Gaussian random fields
         """
         assert n_realizations > 0
 
