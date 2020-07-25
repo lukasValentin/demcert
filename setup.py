@@ -10,7 +10,7 @@ with open(path.join(home, 'README.md'), encoding='utf-8') as readme:
 
 setuptools.setup(name='demcert',
       version = '1.0',
-      description = 'A general purpose tool for modelling uncertainty on gridded spatial data',
+      description = 'A general purpose tool for modelling uncertainty on gridded spatial data using Gaussian random fields',
       long_description = long_description,
       long_description_content_type = 'text/markdown',
       author='Lukas Graf',

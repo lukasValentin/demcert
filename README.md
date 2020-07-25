@@ -1,1 +1,1 @@
-# DEMCERT - A general purpose tool for modelling uncertainty on gridded spatial data
+# DEMCERT - A general purpose tool for modelling uncertainty on gridded spatial data using Gaussian random fields
