@@ -44,6 +44,12 @@ class kernel(object):
         self.operator = operator
 
 
+    def _setNAN(self, values):
+        """replaces the user-defined no-data value with np.nan"""
+        values[values == self.nodata_value] = np.nan
+        return values
+
+
     def applyConvolution(self, values):
         """
         once the values are loaded, the convolution is performed using a user-
@@ -53,6 +59,8 @@ class kernel(object):
         :param values: values to be passed to the convolution operator
         :return: result of the statistical operator
         """
+        # set nodata to nan
+        values = self._setNAN(values)
         conv_val = np.nan
         # apply the selected statistical operator to the data in the kernel
         if self.operator == 'mean':
