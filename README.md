@@ -15,6 +15,5 @@ running setup.py in your Python3 shell:
 ```{cmd}
 git clone https://github.com/lukasValentin/demcert.git
 cd demcert
-python3 setup.py install -r requirements.txt
+python3 setup.py install
 ```
-
