@@ -1,5 +1,7 @@
 ## DEMCERT - A general purpose tool for modelling uncertainty on gridded spatial data using Gaussian random fields
 
+[![DOI](https://zenodo.org/badge/282487376.svg)](https://zenodo.org/badge/latestdoi/282487376)
+
 Almost every spatial dataset contains a certain amount of uncertainty that is the lack of knowledge about errors in the data. Since our knowledge about the errors in spatial data is usually limited (but we can be relatively sure that errors are very likely to exist) we have to acknowledge that uncertainty persists in our data. Consequently, uncertainty will also have an impact on analysis and modelling that is carried out.
 
 The **purpose** of this small tool is to provide a **stochastic attempt** to model uncertainty of gridded spatial dataset such as Digital Elevation Models (DEMs). **demcert** attempts to model uncertainty by generating **scenarios**, i.e., a set of possible dataset realizations, which account for the level of uncertainty that we assume to be present in the dataset. We then assume that the "true" state lies somewhere in between all those realizations generated and the variation between the single realizations accounts for the potential impact of uncertainty on subsequent analysis and modelling attempts.
